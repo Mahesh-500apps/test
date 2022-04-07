@@ -1,0 +1,48 @@
+<html>
+<head></head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+       var arrays = ["agile","crm","mantra","technologies",500,"infinity"];
+       arrays.pop();
+    
+       arrays.push("500apps");
+       arrays.push("infinity");
+       arrays.splice(2, 2,"mahesh","sai");
+
+     
+        //document.getElementById("demo").innerHTML =arrays;
+        //arrays.pop();
+    
+        document.getElementById("demo").innerHTML=arrays;
+        arrays.pop();
+        arrays[0] = "eliga";
+        document.getElementById("demo1").innerHTML=arrays;
+        arrays.pop();
+        arrays[0]="agile";
+        document.getElementById("demo2").innerHTML =arrays;
+        delete arrays();
+        
+        //document.getElementById("demo3").innerHTML =arrays;
+        //concat method
+        const animals=["dog","cat"];
+        const birds=["hen","parrot"];
+        const pets=animals.concat(birds);
+        document.getElementById("demo3").innerHTML =pets;
+
+        
+       
+
+
+        
+        
+
+        
+      
+    </script>
+</body>
+</html>
+
