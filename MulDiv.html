@@ -1,0 +1,30 @@
+<html>
+<body>
+    <form>
+        <label>1st number</label>
+        <input id="d1"type="number"><br>
+        <br>
+        <label>2nd number</label>
+        <input id="d2"type="number"><br><br> 
+        <button onclick="multiply()">multiply</button>
+        <button onclick="division()">division</button>
+        <script>
+             
+            function multiply(p,q){
+                var p=document.getElementById("d1").value;
+                var q=document.getElementById("d2").value;
+                let result=p*q;
+               
+                document.write("result is"+result);
+
+            }
+            function division(p,q){
+                var p=document.getElementById("d1").value;
+                var q=document.getElementById("d2").value;
+                let result=p/q;
+                
+                document.write("result is"+result);
+            }
+
+        </script>
+

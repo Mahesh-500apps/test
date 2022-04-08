@@ -1,0 +1,45 @@
+<html>
+<head>forms</head>
+    <body>
+        <form onsubmit="view()">
+            <label>firstname</label>
+            <input id="d1"type="text"><br>
+            <br>
+            <label>last name</label>
+            <input id="d2"type="text"><br><br> 
+            <label>phone number</label>
+            <input id="d3" type="number"><br><br>
+
+            <button onclick=create() value="submit">submit<br>
+            <script>
+                function view(){
+                    document.write(document.getElementById("d1").value+"<br>"+document.getElementById("d2").value+"<br>"+document.getElementById("d3").value);    
+                               
+                }
+                function create(){
+                   var fname=document.getElementById("d1");
+                   var lname=document.getElementById("d2");
+                   var phone=document.getElementById("d3");
+
+
+
+
+                    document.cookie="first name="+fname.value; 
+                    document.cookie="last name="+lname.value;
+                    document.cookie="phone number="+phone.value;   
+
+                                }
+                window.onload = function(){
+
+                    document.getElementById("d1").value = nfame;
+                    document.getElementById("d2").value = lname;
+                    document.getElementById("d3").value = phone;
+                    
+                     
+
+    }
+       
+        </script>
+        </form>
+    </body>
+</html> 
