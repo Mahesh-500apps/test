@@ -4,20 +4,23 @@
         <p id="demo2"></p>
         <script>
        
-            var users=[{name: "500apps",id:1},
+            let users=[{name: "500apps",id:1},
             { name : "Technologies" , id : 2 },
             { name: "Agile",id:3},
             {name:"Mantra",id:4},
             {name:"Clockly",id:5},
             {name:"CRM",id:6},
-            {name:"500apps",id:7}]
+            {name:"500apps",id:7}];
+            let field=name;
+            let reverse=users.sort((a,b) => (a[field] || " ").toString.localeCompare ((b[field] || " ").toString()))
+            function rev(){
+            console.log(users.sort((a,b)=>(a[field]  || " ").toString.localeCompare ((b[field] || " ").toString())));
+
             
-            
-            document.getElementById("demo1").innerHTML=users;
-            console.log(users);
-            users.sort();
-            document.getElementById("demo2").innerHTML=users;
-            console.log(users);
+            }
+           function rever(){
+               console.log(reverse.reverse())
+           }
             
 
 
